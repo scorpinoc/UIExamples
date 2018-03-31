@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">UIExamples</string>
+    <string name="btn_layouts">Layouts</string>
+    <string name="btn_buttons">Buttons</string>
+    <string name="btn_text_view">Text view</string>
+    <string name="btn_edit_text">Edit text</string>
+    <string name="title_activity_text_view">TextViewActivity</string>
+    <string name="title_activity_edit_text">EditTextActivity</string>
+    <string name="btn_layouts_linear">Linear layout</string>
+    <string name="btn_layouts_relative">Relative layouts</string>
+    <string name="btn_layouts_table">Table layout</string>
+    <string name="txt_table_cell">text</string>
+    <string name="btn_layouts_grid">Grid layout</string>
 </resources>

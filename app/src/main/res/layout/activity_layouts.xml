@@ -6,30 +6,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="16dp"
-    tools:context="com.github.scorpinoc.uiexamples.MainActivity">
+    tools:context="com.github.scorpinoc.uiexamples.LayoutsActivity">
+
+    <!--todo refactor-->
 
     <Button
-        android:id="@+id/btn_layouts"
+        android:id="@+id/btn_layouts_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_layouts" />
+        android:text="@string/btn_layouts_linear" />
 
     <Button
-        android:id="@+id/btn_text_view"
+        android:id="@+id/btn_layouts_relative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_text_view" />
+        android:text="@string/btn_layouts_relative" />
 
     <Button
-        android:id="@+id/btn_edit_text"
+        android:id="@+id/btn_layouts_table"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_edit_text" />
+        android:text="@string/btn_layouts_table" />
 
     <Button
-        android:id="@+id/btn_buttons"
+        android:id="@+id/btn_layouts_grid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_buttons" />
+        android:text="@string/btn_layouts_grid" />
 
 </LinearLayout>
