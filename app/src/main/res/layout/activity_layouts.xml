@@ -34,4 +34,16 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_layouts_grid" />
 
+    <Button
+        android:id="@+id/btn_layouts_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_layouts_frame" />
+
+    <Button
+        android:id="@+id/btn_layouts_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_layouts_constraint" />
+
 </LinearLayout>

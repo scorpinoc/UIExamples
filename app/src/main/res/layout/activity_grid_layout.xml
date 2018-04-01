@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.github.scorpinoc.uiexamples.GridLayoutActivity">
+    tools:context="com.github.scorpinoc.uiexamples.layouts.GridLayoutActivity">
 
     <GridLayout
         android:id="@+id/layout_grid"

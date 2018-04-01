@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import static com.github.scorpinoc.uiexamples.MainActivity.TITLE;
 
-abstract class BaseGetTitleActivity extends AppCompatActivity {
+public abstract class BaseGetTitleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
