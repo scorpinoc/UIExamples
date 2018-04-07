@@ -30,15 +30,20 @@
         <activity android:name=".layouts.TableLayoutActivity" />
         <activity android:name=".layouts.RelativeLayoutActivity" />
         <activity android:name=".layouts.GridLayoutActivity" />
-        <activity android:name=".ConstraintLayoutActivity" />
         <activity android:name=".layouts.ConstraintLayoutActivity" />
-        <activity android:name=".RegistrationConstraintLayourActivity" />
-        <activity android:name=".layouts.RegistrationConstraintLayoutActivity" />
         <activity android:name=".layouts.constraint.RegistrationConstraintLayoutActivity" />
+        <activity android:name=".layouts.constraint.ProfileConstraintLayoutActivity" />
+        <activity android:name=".layouts.constraint.LoginConstraintLayoutActivity" />
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
-        <activity android:name=".layouts.constraint.ProfileConstraintLayoutActivity"></activity>
+            android:name=".MainNavigationActivity"
+            android:label="@string/title_activity_main_navigation"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

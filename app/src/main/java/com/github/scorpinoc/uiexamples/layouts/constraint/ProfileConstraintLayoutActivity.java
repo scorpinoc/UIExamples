@@ -23,9 +23,9 @@ public class ProfileConstraintLayoutActivity extends BaseGetTitleActivity {
 
         SharedPreferences preferences = getSharedPreferences(USER_DATA, MODE_PRIVATE);
 
-        ((TextView)findViewById(R.id.text_login)).setText(preferences.getString(LOGIN, "no login"));
-        ((TextView)findViewById(R.id.text_password)).setText(preferences.getString(PASSWORD, "no password"));
-        ((TextView)findViewById(R.id.text_name)).setText(preferences.getString(NAME, "no name"));
+        ((TextView)findViewById(R.id.text_login)).setText(preferences.getString(LOGIN, getString(R.string.txt_no_login)));
+        ((TextView)findViewById(R.id.text_password)).setText(preferences.getString(PASSWORD, getString(R.string.txt_no_password)));
+        ((TextView)findViewById(R.id.text_name)).setText(preferences.getString(NAME, getString(R.string.txt_no_name)));
 
         findViewById(R.id.btn_log_off)
                 .setOnClickListener(e -> {
@@ -33,15 +33,9 @@ public class ProfileConstraintLayoutActivity extends BaseGetTitleActivity {
                     preferences
                             .edit()
                             .putBoolean(LOGGED_IN, false)
-                            .commit();
+                            .apply();
 
-                    Intent intent = new Intent(
-                            ProfileConstraintLayoutActivity.this,
-                            ConstraintLayoutActivity.class);
-
-                    intent.putExtra(TITLE, getString(R.string.btn_layouts_constraint));
-
-                    startActivity(intent);
+                    onBackPressed();
                 });
     }
 }
